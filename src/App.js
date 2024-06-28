@@ -4,6 +4,12 @@ import './App.css';
 function App() {
   return (
     <div>
+      <div className='header'>
+        <div className='title'>
+          <h1>Alexie's Journal</h1>
+        </div>
+      </div>
+
       <div className='main'>
         <h1>Welcome!</h1>
       </div>
@@ -13,7 +19,7 @@ function App() {
         <div className='about'>
           <div className='abouttext'>
             <h2>About Me</h2>
-            <p>Hello! My name is Alexie and I use this site to showcase
+            <p>Hello! My name is Alexie Gordon and I use this site to showcase
               what I am able to do with programming.
             </p>
             <p>

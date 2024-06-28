@@ -10,7 +10,16 @@
 
 body {
  background-image: url("/src/lines.png");
+ background-size: 80px 80px;
  margin: 5vw;
+}
+
+.header a {
+  color: rgb(208, 105, 93);
+}
+
+.header a:visited {
+  color: rgb(208, 105, 93);
 }
 
 a:visited {
@@ -23,6 +32,29 @@ a:hover {
 
 a {
   color: salmon;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.header {
+  flex: display;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-family: Outfit;
+  font-size: 20px;
+  margin: auto;
+  max-width: 800px;
+  background-color: rgba(206, 132, 125, 0.531);
+  color: rgb(255, 249, 241);
+  padding-top: 5px;
+  padding-left: 10px;
+  box-shadow: 4px 3px 8px rgba(90, 34, 28, 0.576);
+}
+
+.title {
+  max-width: 290px;
+  position: inline;
 }
 
 .main {
@@ -50,13 +82,16 @@ a {
   margin-right: auto;
   min-width: 200px;
   max-width: 800px;
-  background-color: white;
-  border: 2px dashed #9a6565;
+  background-color: rgb(252, 248, 245);
+  border-top: 2.5px dashed #9a6565;
+  border-left: 2.5px dashed #9a6565;
+  box-shadow: 4px 3px 5px rgba(90, 34, 28, 0.574);
 }
 
 .section h2 {
   font-family: Outfit;
-  font-weight: 800;
+  color: rgb(59, 52, 49);
+  font-weight: 600;
   font-size: 2rem;
 
 }
