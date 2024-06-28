@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Playwrite;
+  src: url(/src/PlaywriteSK-VariableFont_wght.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Outfit;
+  src: url(/src/Outfit-VariableFont_wght.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+ background-image: url("/src/lines.png");
+ margin: 5vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:visited {
+  color: #df9f8d;
+}
+
+a:hover {
+  color:#af6855
+}
+
+a {
+  color: salmon;
+}
+
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.main h1 {
+  font-family: Playwrite;
+  color: #69332c;
+  text-shadow: 3px 3px white;
+  font-weight: 700;
+  font-size: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section {
+  display: flex;
+  justify-content: normal;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  max-width: 800px;
+  background-color: white;
+  border: 2px dashed #9a6565;
+}
+
+.section h2 {
+  font-family: Outfit;
+  font-weight: 800;
+  font-size: 2rem;
+
+}
+
+.section h3 {
+  font-family: Outfit;
+  font-weight: 700;
+  color: #975454;
+}
+
+.section h4 {
+  font-family: Outfit;
+  font-weight: 600;
+}
+
+.section p {
+  font-family: Outfit;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.about {
+  padding: 1em;
+  flex-grow: 1;
+}
+
+.education {
+  padding: 1em;
+}
+
+.education p {
+  font-size: 15px;
+}
+
+.certifications {
+  padding: 1em;
+}
+
+.projects {
+  padding: 1em;
 }
