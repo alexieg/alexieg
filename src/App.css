@@ -1,13 +1,3 @@
-@font-face {
-  font-family: Playwrite;
-  src: url(/src/PlaywriteSK-VariableFont_wght.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: Outfit;
-  src: url(/src/Outfit-VariableFont_wght.ttf) format('truetype');
-}
-
 body {
  background-image: url("/src/lines.png");
  background-size: 80px 80px;
@@ -41,7 +31,7 @@ a {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  font-family: Outfit;
+  font-family: "Outfit";
   font-size: 20px;
   margin: auto;
   max-width: 800px;
@@ -66,7 +56,7 @@ a {
 }
 
 .main h1 {
-  font-family: Playwrite;
+  font-family: "Playwrite MX";
   color: #69332c;
   text-shadow: 3px 3px white;
   font-weight: 700;
@@ -97,18 +87,18 @@ a {
 }
 
 .section h3 {
-  font-family: Outfit;
+  font-family: "Outfit";
   font-weight: 700;
   color: #975454;
 }
 
 .section h4 {
-  font-family: Outfit;
+  font-family: "Outfit";
   font-weight: 600;
 }
 
 .section p {
-  font-family: Outfit;
+  font-family: "Outfit";
   font-weight: 300;
   font-size: 18px;
 }
