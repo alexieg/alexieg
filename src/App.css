@@ -63,10 +63,10 @@ a {
 }
 
 .main h1 {
-  font-family: "Playwrite MX";
-  color: #69332c;
-  text-shadow: 3px 3px white;
-  font-weight: 700;
+  font-family: "Pacifico";
+  color: #743931;
+  text-shadow: 2px 5px 1px white;
+  font-weight: 500;
   font-size: 60px;
   margin-top: 5px;
   margin-bottom: 25px;
@@ -89,7 +89,7 @@ a {
 }
 
 .section h2 {
-  font-family: Outfit;
+  font-family: "Outfit";
   color: rgb(59, 52, 49);
   font-weight: 600;
   font-size: 2rem;
