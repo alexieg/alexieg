@@ -29,20 +29,24 @@ a {
 
 .header {
   flex: display;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  font-family: "Outfit";
-  font-size: 20px;
+  justify-content: left;
+  align-items: normal;
+  flex-wrap: nowrap;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
   max-width: 800px;
   background-color: rgba(206, 132, 125, 0.531);
-  color: rgb(255, 249, 241);
   padding-top: 5px;
   padding-left: 10px;
+  margin-bottom: 10px;
   box-shadow: 4px 3px 8px rgba(90, 34, 28, 0.576);
+}
+
+.header h1 {
+  font-family: "Outfit";
+  font-size: 40px;
+  color: rgb(255, 249, 241);
+  padding-bottom: 10px;
 }
 
 .title {
@@ -75,6 +79,7 @@ a {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   min-width: 200px;
   max-width: 800px;
   background-color: rgb(252, 248, 245);
