@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.02043480.css",
-    "main.js": "/static/js/main.76dfbc79.js",
-    "static/js/453.6dccb398.chunk.js": "/static/js/453.6dccb398.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.02043480.css.map": "/static/css/main.02043480.css.map",
-    "main.76dfbc79.js.map": "/static/js/main.76dfbc79.js.map",
-    "453.6dccb398.chunk.js.map": "/static/js/453.6dccb398.chunk.js.map"
+    "main.css": "/alexieg/static/css/main.02043480.css",
+    "main.js": "/alexieg/static/js/main.c61b92d6.js",
+    "static/js/453.6dccb398.chunk.js": "/alexieg/static/js/453.6dccb398.chunk.js",
+    "static/media/logo.svg": "/alexieg/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/alexieg/index.html",
+    "main.02043480.css.map": "/alexieg/static/css/main.02043480.css.map",
+    "main.c61b92d6.js.map": "/alexieg/static/js/main.c61b92d6.js.map",
+    "453.6dccb398.chunk.js.map": "/alexieg/static/js/453.6dccb398.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02043480.css",
-    "static/js/main.76dfbc79.js"
+    "static/js/main.c61b92d6.js"
   ]
 }
