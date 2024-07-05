@@ -2,8 +2,7 @@ import logo from './logo.svg';
 /* import './App.css'; */
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
-import { Routes, Route } from 'react-router-dom';
-
+import { HashRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
