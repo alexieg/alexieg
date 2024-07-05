@@ -1,0 +1,34 @@
+.header {
+    flex: display;
+    justify-content: left;
+    align-items: normal;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    background-color: rgba(206, 132, 125, 0.531);
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 3px 8px rgba(90, 34, 28, 0.576);
+  }
+  
+  .header h1 {
+    font-family: "Outfit";
+    font-size: 40px;
+    color: rgb(255, 249, 241);
+    padding-bottom: 10px;
+  }
+
+  .header a {
+    color: rgb(208, 105, 93);
+  }
+  
+  .header a:visited {
+    color: rgb(208, 105, 93);
+  }
+  
+  .title {
+    max-width: 290px;
+    position: inline;
+  }
