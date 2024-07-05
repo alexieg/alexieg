@@ -1,7 +1,8 @@
 import Header from '../components/Header.js';
-import '../pages/HomePage.css';
+import './HomePage.css';
 
-function HomePage() {
+function HomePage(props) {
+
     return (
         <div>
             <Header />

@@ -1,7 +1,60 @@
-body {
-    background-image: url("/src/resources/lines.png");
-    background-size: 80px 80px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-   }
+.main h1 {
+    font-family: "Playwrite MX";
+    font-weight: 600;
+    font-size: 4rem;
 
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 50px;
+    min-width: 80px;
+    max-width: 380px;
+    background-color: rgb(252, 248, 245);
+    border: 2.5px dashed #9a6565;
+    box-shadow: 4px 3px 5px #5a221c92;
+}
+
+.login-form .errorLabel {
+    font-family: "Outfit";
+    font-size: 16px;
+    color: #e25941;
+}
+
+.login-form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form .form-field {
+    margin-bottom: 12px;
+}
+
+.login-form input {
+    font-family: "Outfit";
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-form .inputBox {
+    padding: 12px;
+    outline-color: #5a221c;
+}
+
+input[type='button'] {
+    border: none;
+    background: #5a221c;
+    font-weight: 600 !important;
+    color: rgb(255, 252, 250);
+    padding: 8px 16px;
+    margin-top: 4px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}

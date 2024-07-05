@@ -1,13 +1,12 @@
 .header {
-    flex: display;
-    justify-content: left;
-    align-items: normal;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
     flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
     background-color: rgba(206, 132, 125, 0.531);
-    padding-top: 5px;
     padding-left: 10px;
     margin-bottom: 10px;
     box-shadow: 4px 3px 8px rgba(90, 34, 28, 0.576);
@@ -17,18 +16,39 @@
     font-family: "Outfit";
     font-size: 40px;
     color: rgb(255, 249, 241);
-    padding-bottom: 10px;
   }
 
   .header a {
-    color: rgb(208, 105, 93);
+    color: #823931;
   }
   
   .header a:visited {
-    color: rgb(208, 105, 93);
+    color: #823931;
   }
   
   .title {
     max-width: 290px;
-    position: inline;
+    text-shadow: 1px 2px 5px #743931ac;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    flex-grow: 1;
+  }
+
+  .homelink {
+    font-family: "Outfit";
+    text-shadow: 2px 2px 2px #ffffff92;
+    font-weight: 600;
+    padding-right: 5dvh;
+    margin-left: auto;
+
+  }
+
+  .loginlink {
+    font-family: "Outfit";
+    text-shadow: 2px 2px 2px #ffffff92;
+    font-weight: 600;
+    margin-right: auto;
+    padding-right: 20px;
+
   }
