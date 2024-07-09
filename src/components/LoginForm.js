@@ -1,55 +1,95 @@
 import { Button, Checkbox, Form } from 'semantic-ui-react';
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState, useContext, useEffect } from 'react';
+import { useNavigate, Link, useLocation } from 'react-router-dom'
+import { UserContext } from '../contexts/user.context';
 
 
 
-const LoginForm = (props) => {
-    const [username,setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [usernameError, setUsernameError] = useState('');
-    const [passwordError, setPasswordError] = useState('');
-
+const LoginForm = () => {
     const navigate = useNavigate;
+    const location = useLocation();
 
-    const onButtonClick = () => {
-        setUsernameError('');
-        setPasswordError('');
+    //get and set user details
+    const { user, fetchUser, usernamePasswordLogin } = useContext(UserContext);
 
-        if('' === username) {
-            setUsernameError('Please enter valid username');
-            return;
-        }
+    //useState to keep track of form values
+    const [form, setForm] = useState({
+        username: "",
+        password: ""
+    });
 
-        if ('' === password) {
-            setPasswordError('Please enter valid password');
-            return;
+    const onFormInputChange = (event) => {
+        const { name, value } = event.target;
+        setForm({ ...form, [name]: value});
+    };
+
+    //redirect to appropriate page
+    const redirectNow = () => {
+        const redirectTo = location.search.replace("?redirectTo=", "");
+        navigate(redirectTo ? redirectTo : "/");
+    }
+
+    //prevent having to constantly log in
+    const loadUser = async () => {
+        if (!user) {
+            const fetchedUser = await fetchUser();
+            if (fetchedUser) {
+                //redirect once fetched
+                redirectNow();
+            }
         }
     }
+
+    //verify user logged in
+    useEffect(() => {
+        loadUser();
+    }, []);
+
+    const onSubmit = async (event) => {
+        try {
+            // Here we are passing user details to our emailPasswordLogin
+            // function that we imported from our realm/authentication.js
+            // to validate the user credentials and log in the user into our App.
+            const user = await usernamePasswordLogin(form.username, form.password);
+            if (user) {
+            redirectNow();
+            }
+        } catch (error) {
+            if (error.statusCode === 401) {
+                alert("Invalid username/password. Try again!");
+            } else {
+                alert(error);
+            }
+        
+        }
+        };
     return (
         <div className={'login-form'}>
             <div className={'form-field'}>
                 <input 
-                    value={username}
+                    name="username"
+                    type="username"
+                    value={form.username}
                     placeholder='Enter username' 
-                    onChange={(e) => setUsername(e.target.value)}
+                    onInput={onFormInputChange}
                     className={'inputBox'}
                 />
-            <label className="errorLabel">{usernameError}</label>
             </div>
             <div className={'form-field'}>
                 <input 
+                    name="password"
+                    type="password"
+                    value={form.password}
                     placeholder='Enter password' 
-                    onChange={(e) => setPassword(e.target.value)}
+                    onInput={onFormInputChange}
                     className={'inputBox'}
                 />
-            <label className="errorLabel">{passwordError}</label>
             </div>
             <div className={'form-field'}>
             <input 
                 className={'inputButton'} 
                 type='button'
-                onClick={onButtonClick}
+                onClick={onSubmit}
                 value={'Login'} 
             />
             </div>
